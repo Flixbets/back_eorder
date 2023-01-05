@@ -56,10 +56,10 @@ module.exports = (sequelize, Sequelize) => {
     //   type: Sequelize.STRING,
     //   defaultValue: "",
     // },
-    // lastnamebank: {
-    //   type: Sequelize.STRING,
-    //   defaultValue: "",
-    // },
+    addressnow: {
+      type: Sequelize.STRING,
+      defaultValue: "",
+    },
     statusproduct:{
       type: Sequelize.TINYINT,
       defaultValue: 0,

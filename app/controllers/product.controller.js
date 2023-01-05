@@ -268,8 +268,8 @@ exports.deleteImageProduct = async (req, res) => {
     product
       .findAll({ order: [["createdAt", "DESC"]],})
       .then((data) => {
-        if (data.length > 50) {
-          data.length = 50;
+        if (data.length > 30) {
+          data.length = 30;
         }
         res.send(shuffleArray(data));
       })

@@ -159,6 +159,7 @@ exports.createPeople = async (req, res) => {
           pincode: req.body.pincode,
           idbank: req.body.idbank,
           codebank: req.body.codebank,
+          addressnow: req.body.addressnow,
           // firstnamebank: req.body.firstnamebank,
           // lastnamebank: req.body.lastnamebank,
 
@@ -328,7 +329,7 @@ exports.getOneUserAfter = (req, res) => {
     .findOne({
       attributes: ["id", "firstname", "lastname", "username", 
       "idline", "credit", "creditwithdraw", "phone", "imageprofile",
-       "idbank", "codebank","statusproduct","refcode","pincode"],
+       "idbank", "codebank","statusproduct","refcode","pincode","addressnow"],
       where: { id: id },
     })
     .then((user) => {
@@ -394,7 +395,7 @@ exports.updateUser = async (req, res) => {
           pincode: req.body.pincode,
           idbank: req.body.idbank,
           codebank: req.body.codebank,
-          // firstnamebank: req.body.firstnamebank,
+          addressnow: req.body.addressnow,
           // lastnamebank: req.body.lastnamebank,
         };
       } catch (err) { }

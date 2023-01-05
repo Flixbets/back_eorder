@@ -148,6 +148,18 @@ function initial3() {
       name: "gmail",
       nameurl: "https://www.gmail.com"
     });
+    Weburl.create({
+      name: "idbank",
+      nameurl: "1"
+    });
+    Weburl.create({
+      name: "codebank",
+      nameurl: "0000000000"
+    });
+    Weburl.create({
+      name: "namebank",
+      nameurl: "name lastname"
+    });
    
   }
 

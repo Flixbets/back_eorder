@@ -57,8 +57,9 @@ exports.updateWeburl = async (req, res) => {
             weburl.update({nameurl:req.body.websiteURL},{where:{name:"website"}});
             weburl.update({nameurl:req.body.lineURL},{where:{name:"line"}});
             weburl.update({nameurl:req.body.gmailURL},{where:{name:"gmail"}});
-            weburl.update({nameurl:req.body.headertxt},{where:{name:"headertxt"}});
-            weburl.update({nameurl:req.body.contenttxt},{where:{name:"contenttxt"}});
+            weburl.update({nameurl:req.body.idbank},{where:{name:"idbank"}});
+            weburl.update({nameurl:req.body.codebank},{where:{name:"codebank"}});
+            weburl.update({nameurl:req.body.namebank},{where:{name:"namebank"}});
             res.status(200).send({
                 message: "Weburl was updated successfully."
               });
